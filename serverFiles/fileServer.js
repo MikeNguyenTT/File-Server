@@ -13,7 +13,6 @@ server.on('connection', (client) => {
     
     fs.readFile(filePath, 'utf8', function(err, data){
       if (err) {
-        console.log("AAAAAAAAA");
         client.write("Error: " + err);
       }
       else {
